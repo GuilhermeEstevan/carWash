@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: var(--shadow-4);
-    height: 40rem;
+    height: 35rem;
     background: white;
     display: flex;
     flex-direction: column;

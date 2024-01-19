@@ -126,7 +126,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
                 </Button>
               </div>
               <div className="registrationOrLogin">
-                <p> {isMember ? "já tem cadastro?" : "não tem conta?"}</p>
+                <p> {isMember ? "não tem conta?" : "já tem cadastro?"}</p>
                 <button
                   type="button"
                   onClick={() => {
