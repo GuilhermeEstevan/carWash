@@ -7,18 +7,21 @@ const Wrapper = styled.div`
   min-height: 100vh;
   display: flex;
   align-items: center;
+  padding: 1rem;
+  font-family: "open-sans";
 
   .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-shadow: var(--shadow-4);
   }
 
   .banner {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
-    height: 20rem;
+    height: 15rem;
     background-image: url(${banner});
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,21 +50,27 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+   
 
     h3 {
       font-size: 2.5rem;
       color: var(--primary-1);
+      margin-bottom: 2rem;
     }
   }
 
   .login-form {
-    width: 80%;
+    width: 50%;
   }
 
   .form-row {
     padding: 12px 0;
     width: 100%;
     border-radius: 10px;
+
+    input {
+      font-size: 0.9rem;
+    }
   }
 
   .submit-btn {
@@ -99,7 +108,7 @@ const Wrapper = styled.div`
     .banner {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
-      height: 40rem;
+      height: 35rem;
       width: 30rem;
     }
 
@@ -110,6 +119,7 @@ const Wrapper = styled.div`
 
     .form-section {
       width: 30rem;
+      height: 35rem;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
     }
@@ -119,12 +129,11 @@ const Wrapper = styled.div`
       flex-direction: row;
     }
     .banner {
-      height: 40rem;
-      width: 40rem;
+      width: 30rem;
     }
 
     .form-section {
-      width: 40rem;
+      width: 30rem;
     }
   }
 `;

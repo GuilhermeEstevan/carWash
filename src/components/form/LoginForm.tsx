@@ -1,6 +1,6 @@
 import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 
 const LoginForm = ({ isMember, setIsMember }) => {
@@ -40,9 +40,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h3">
-          {isMember ? "Login" : "Registre-se"}
-        </Typography>
+        <h3> {isMember ? "Login" : "crie sua conta"}</h3>
         <Formik
           initialValues={{ email: "", password: "", name: "" }}
           validationSchema={validationSchema}
@@ -121,6 +119,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
                     background: "rgb(209, 56, 14)",
                     color: "#ebe6e3",
                     width: "100%",
+                    borderRadius: "20px",
                   }}
                 >
                   Login
@@ -134,7 +133,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
                     setIsMember(!isMember);
                   }}
                 >
-                  {isMember ? "faça seu login" : "registre-se"}
+                  {isMember ? "faça seu login" : "registrar"}
                 </button>
               </div>
             </Form>
