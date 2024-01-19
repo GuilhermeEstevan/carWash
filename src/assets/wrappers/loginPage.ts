@@ -2,7 +2,7 @@ import styled from "styled-components";
 import banner from "../images/car-wash-3960877_1280.jpg";
 
 const Wrapper = styled.div`
-  background: var(--gray);
+  background: linear-gradient(to bottom right, #e9edfa, #d0d6f2);
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -14,7 +14,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: var(--shadow-4);
   }
 
   .banner {
@@ -26,6 +25,7 @@ const Wrapper = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: var(--shadow-4);
   }
 
   .banner-content {
@@ -44,13 +44,13 @@ const Wrapper = styled.div`
   .form-section {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: var(--shadow-4);
     height: 40rem;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-   
 
     h3 {
       font-size: 2.5rem;
