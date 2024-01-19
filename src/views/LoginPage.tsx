@@ -3,7 +3,7 @@ import Wrapper from "../assets/wrappers/loginPage";
 import LoginForm from "../components/form/LoginForm";
 
 const LoginPage = () => {
-  const [isMember, setIsMember] = useState(false);
+  const [isMember, setIsMember] = useState(true);
 
   return (
     <Wrapper>
