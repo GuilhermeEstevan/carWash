@@ -122,7 +122,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
                     borderRadius: "20px",
                   }}
                 >
-                  {isMember? "Login" : "Criar conta"}
+                  {isMember ? "Login" : "Criar conta"}
                 </Button>
               </div>
               <div className="registrationOrLogin">
@@ -133,7 +133,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
                     setIsMember(!isMember);
                   }}
                 >
-                  {isMember ? "Registrar" : "Faça seu login"}
+                  {isMember ? "Crie sua conta" : "Entrar"}
                 </button>
               </div>
             </Form>
