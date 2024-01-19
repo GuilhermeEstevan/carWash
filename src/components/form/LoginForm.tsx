@@ -90,7 +90,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
               </div>
               <div className="form-row">
                 <TextField
-                  label="Password"
+                  label="Senha"
                   variant="outlined"
                   fullWidth
                   id="password"
