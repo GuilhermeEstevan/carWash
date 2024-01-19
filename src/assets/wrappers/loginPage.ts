@@ -83,10 +83,6 @@ const Wrapper = styled.div`
     align-items: center;
     margin-top: 2rem;
 
-    p {
-      text-transform: capitalize;
-    }
-
     button {
       cursor: pointer;
       color: var(--primary-1);
@@ -96,7 +92,7 @@ const Wrapper = styled.div`
       letter-spacing: var(--letterSpacing);
       padding: 0.375rem 0.75rem;
       transition: var(--transition);
-      text-transform: capitalize;
+      /* text-transform: capitalize; */
       display: inline-block;
     }
   }

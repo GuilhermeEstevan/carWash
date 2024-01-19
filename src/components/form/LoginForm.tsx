@@ -40,7 +40,7 @@ const LoginForm = ({ isMember, setIsMember }) => {
           justifyContent: "center",
         }}
       >
-        <h3> {isMember ? "Login" : "crie sua conta"}</h3>
+        <h3> {isMember ? "Login" : "Crie sua conta"}</h3>
         <Formik
           initialValues={{ email: "", password: "", name: "" }}
           validationSchema={validationSchema}
@@ -122,18 +122,18 @@ const LoginForm = ({ isMember, setIsMember }) => {
                     borderRadius: "20px",
                   }}
                 >
-                  Login
+                  {isMember? "Login" : "Criar conta"}
                 </Button>
               </div>
               <div className="registrationOrLogin">
-                <p> {isMember ? "não tem conta?" : "já tem cadastro?"}</p>
+                <p> {isMember ? "Não tem conta?" : "Já tem cadastro?"}</p>
                 <button
                   type="button"
                   onClick={() => {
                     setIsMember(!isMember);
                   }}
                 >
-                  {isMember ? "registrar" : "faça seu login"}
+                  {isMember ? "Registrar" : "Faça seu login"}
                 </button>
               </div>
             </Form>
